@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alquiler de Carros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#carros">ALQUILER DE CARROS</a></li>
+        </ul>
+    </nav>
+    <section id="carros">
+        <h1>Alquiler de Carros</h1>
+        <p>Elige un carro y selecciona la cantidad de días para obtener el precio.</p>
+        <form id="alquiler-form">
+            <label for="carro">Selecciona un carro:</label>
+            <select id="carro" name="carro" required>
+                <option value="bmw">BMW Azul</option>
+                <option value="mercedes">Mercedes Negro</option>
+                <option value="twingo">Twingo Verde</option>
+                <option value="megane">Megane Rojo</option>
+                <option value="chevrolet">Chevrolet Gris</option>
+            </select>
+            <br><br>
+
+            <label for="dias">Cantidad de días:</label>
+            <input type="number" id="dias" name="dias" min="1" required>
+            <br><br>
+
+            <button type="submit">Calcular Precio</button>
+        </form>
+        <div id="resultado">
+            <div id="imagen-carro"></div>
+            <div id="precio"></div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

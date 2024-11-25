@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Nómina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario de Nómina</h1>
+    </header>
+
+    <main>
+        <section class="nómina-section">
+            <h2>Cálculo de Salario y Nómina</h2>
+
+            <form id="nomina-form">
+                <div class="form-group">
+                    <label for="salarioBase">Salario Base ($):</label>
+                    <input type="number" id="salarioBase" name="salarioBase" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ingresos">Ingresos Adicionales ($):</label>
+                    <input type="number" id="ingresos" name="ingresos" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="egresos">Egresos ($):</label>
+                    <input type="number" id="egresos" name="egresos" required>
+                </div>
+
+                <button type="submit">Calcular Nómina</button>
+            </form>
+
+            <div id="resultado" class="resultado">
+                <div class="total">
+                    <h3>Total Ingresos y Egresos</h3>
+                    <p id="salarioTotal"></p>
+                    <p id="totalIngresos"></p>
+                    <p id="totalEgresos"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cálculo de Nómina - Todos los derechos reservados Icabuco</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

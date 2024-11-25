@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competencia de Perros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Competencia de Perros</h1>
+        <p>Ingrese los puestos de los perros ganadores y vea los precios asociados.</p>
+    </header>
+
+    <main>
+
+        <section class="form-section">
+            <form id="competencia-form">
+                <div class="form-group">
+                    <label for="puesto1">Puesto 1 (Perro):</label>
+                    <select id="puesto1" required>
+                        <option value="goldenRetriever">Golden Retriever</option>
+                        <option value="sanBernardo">San Bernardo</option>
+                        <option value="goldenLabrador">Golden Labrador</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="puesto2">Puesto 2 (Perro):</label>
+                    <select id="puesto2" required>
+                        <option value="goldenRetriever">Golden Retriever</option>
+                        <option value="sanBernardo">San Bernardo</option>
+                        <option value="goldenLabrador">Golden Labrador</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="puesto3">Puesto 3 (Perro):</label>
+                    <select id="puesto3" required>
+                        <option value="goldenRetriever">Golden Retriever</option>
+                        <option value="sanBernardo">San Bernardo</option>
+                        <option value="goldenLabrador">Golden Labrador</option>
+                    </select>
+                </div>
+
+                <button type="submit">Mostrar Resultados</button>
+            </form>
+        </section>
+
+        <section id="resultados" class="resultados">
+            <h2>Resultados de la Competencia</h2>
+            <div id="puesto1-result" class="puesto"></div>
+            <div id="puesto2-result" class="puesto"></div>
+            <div id="puesto3-result" class="puesto"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Competencia de Perros - Todos los derechos reservados Icabuco</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

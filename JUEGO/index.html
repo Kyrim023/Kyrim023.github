@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Preguntas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Juego de Preguntas</h1>
+        <p>Responde las preguntas y descubre si eres el ganador.</p>
+    </header>
+
+    <main>
+        <section class="preguntas">
+            <form id="juegoForm">
+                <div class="pregunta">
+                    <label for="pregunta1">¿Colon descubrió América?</label>
+                    <input type="text" id="pregunta1" placeholder="Respuesta" required>
+                </div>
+
+                <div class="pregunta">
+                    <label for="pregunta2">¿La independencia de México fue en el año 1810? (si/no)</label>
+                    <input type="text" id="pregunta2" placeholder="Respuesta" required>
+                </div>
+
+                <div class="pregunta">
+                    <label for="pregunta3">¿The Doors fue un grupo de rock Americano? (si/no)</label>
+                    <input type="text" id="pregunta3" placeholder="Respuesta" required>
+                </div>
+
+                <button type="submit">Enviar Respuestas</button>
+            </form>
+        </section>
+
+        <section id="resultado" class="resultado">
+            <p id="mensaje"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p> &copy; 2024 Juego de Preguntas - Todos los derechos reservados Icabuco</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
